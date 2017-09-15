@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 
+import { ApiserviceService } from "./apiservice.service";
+
+import { Http, Headers, RequestOptions } from "@angular/http";
+import { Observable } from "rxjs/Rx";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +11,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor( ) {//private data : ApiserviceService
+    
+  }
+
+  // PrintData(){
+  //   return(this.data.GetAllUser());
+  // }
 }

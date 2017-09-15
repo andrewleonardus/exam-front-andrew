@@ -1,0 +1,46 @@
+<div id="text" class="container" style="margin-top:30px;">
+  
+    <form class="form-horizontal">
+  
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="Api.Name">Name</label>
+          <div class="col-sm-5">
+            <input type="text" class="form-control" id="username" [(ngModel)]="name" placeholder="Enter Name" name="name">
+          </div>
+      </div>
+  
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="Api.Email">Email</label>
+          <div class="col-sm-5">
+            <input type="email" class="form-control" id="useremail" [(ngModel)]="email" placeholder="Enter Email" name="email">
+          </div>
+      </div>
+  
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="Api.Address">Address</label>
+          <div class="col-sm-5">
+            <input type="text" class="form-control" id="useraddress" [(ngModel)]="address" placeholder="Enter Address" name="address">
+          </div>
+      </div>
+  
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="Api.Phone">Phone Number</label>
+          <div class="col-sm-5">
+            <input type="text" class="form-control" id="userphone" [(ngModel)]="newphone" placeholder="Enter Phone Number" name="phone">
+          </div>
+      </div>
+  
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="Api.Company">Company Name</label>
+          <div class="col-sm-5"> 
+            <input type="text" class="form-control" id="usercompany" [(ngModel)]="company" placeholder="Enter Company Name" name="company">
+          </div>
+      </div>
+      
+      <div class="col-md-offset-2 col-sm-offset-2">
+         <button type="submit" class="btn btn-primary" (click)="AddUser()">Add User</button>
+      </div>
+      
+    </form>
+  
+  </div>

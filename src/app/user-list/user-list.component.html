@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+<body>
+    <div class="backgroundatas">
+      <h1>Exam Front End</h1>
+      <h5>Andrew Leonardus Wijaya</h5>
+    </div>
+  
+    <br>
+      <div class="col-md-6 col-md-offset-3">
+      <table class="table table-bordered">
+        
+            <tr> 
+              <th>Id</th>
+              <th>Name</th>
+              <th>email</th>
+              <th>Phone Number</th>
+              <th>Adress</th>
+              <th>Company</th>
+              <th>Action</th>
+            </tr>
+        
+        
+            <tr *ngFor = "let u of data.Userlist">
+              <td>{{ u.Id}}</td>
+              <td>{{ u.Name }}</td>
+              <td>{{ u.Email }}</td>
+              <td>{{ u.Phone }}</td>
+              <td>{{ u.Address }}</td>
+              <td>{{ u.Company }}</td>
+              
+              <td><button type="button" class="btn btn-danger" (click)='Remove(u.Id)'>
+                <span class="glyphicon glyphicon-trash"></span> Delete
+              </button></td>
+            </tr>
+        </table>
+      </div>
+    
+  
+    
+  
+   
+</body>
+
+  
+  
+
